@@ -4,6 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.anand.skeletonproject.di.ActivityContext;
+import com.anand.skeletonproject.di.PerActivity;
+import com.anand.skeletonproject.ui.home.HomeMvpPresenter;
+import com.anand.skeletonproject.ui.home.HomeMvpView;
+import com.anand.skeletonproject.ui.home.HomePresenter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -38,6 +42,13 @@ public class ActivityModule {
     CompositeDisposable provideCompositeDisposable(){
         return new CompositeDisposable();
     }
+
+    @Provides
+    @PerActivity
+    HomeMvpPresenter<HomeMvpView> provideHomeView(HomePresenter<HomeMvpView> viewHomePresenter){
+        return viewHomePresenter;
+    }
+
 
 
 }
