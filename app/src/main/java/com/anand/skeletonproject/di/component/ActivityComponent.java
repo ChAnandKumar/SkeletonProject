@@ -4,6 +4,7 @@ import com.anand.skeletonproject.MainActivity;
 import com.anand.skeletonproject.di.PerActivity;
 import com.anand.skeletonproject.di.module.ActivityModule;
 import com.anand.skeletonproject.ui.home.HomeActivity;
+import com.anand.skeletonproject.ui.login.LoginActivity;
 
 import dagger.Component;
 
@@ -16,4 +17,6 @@ public interface ActivityComponent {
     void inject(MainActivity activity);
 
     void inject(HomeActivity homeActivity);
+
+    void inject(LoginActivity loginActivity);
 }

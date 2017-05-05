@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "756065955803",
+    "project_id": "skeleton-166705"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756065955803:android:4912c3dda1d7fe57",
+        "android_client_info": {
+          "package_name": "com.anand.skeletonproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756065955803-ecb42gtmskdroat1ngpg7dk8uk3s1ko2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "756065955803-kqbdadfomubgjb5ghciphod3hom5p6oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anand.skeletonproject",
+            "certificate_hash": "36b618ce8aa80c85a9178050ac3db24d27abc1c7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtZMXHxtUHClix_IrnL-jHUNKRywYPyNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
