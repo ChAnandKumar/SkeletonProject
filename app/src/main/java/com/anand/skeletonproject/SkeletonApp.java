@@ -1,6 +1,8 @@
 package com.anand.skeletonproject;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import com.anand.skeletonproject.data.DataManager;
 import com.anand.skeletonproject.di.component.ApplicationComponent;
@@ -24,9 +26,14 @@ public class SkeletonApp extends Application {
     private ApplicationComponent applicationComponent;
 
     @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+        MultiDex.install(this);
+    }
+
+    @Override
     public void onCreate() {
         super.onCreate();
-
         applicationComponent = DaggerApplicationComponent.builder().applicationModule(new ApplicationModule(this)).build();
         this.applicationComponent.inject(this);
         sBusComponent = DaggerBusComponent.builder().build();
