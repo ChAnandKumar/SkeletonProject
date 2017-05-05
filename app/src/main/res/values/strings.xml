@@ -17,6 +17,9 @@
     <string name="action_clear_all">Clear</string>
     <string name="action_logout">Logout</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="btn_logout_from_google">Logout</string>
+    <string name="btn_revoke_access">Revoke</string>
+    <string name="loading">Loading</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
